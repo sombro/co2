@@ -1,0 +1,46 @@
+body{
+	background: lightgrey;
+}
+svg.graph {
+  height: 100px;
+  width: 100px;
+}
+svg.graph .grid {
+  stroke: white;
+  stroke-dasharray: 1 2;
+  stroke-width: 1;
+}
+svg.graph .points {
+  stroke: white;
+  stroke-width: 3;
+}
+svg.graph .first_set {
+  fill: #00554d;
+}
+svg.graph .surfaces {
+  fill-opacity: 0.5;
+}
+svg.graph .labels {
+  font-family: Arial;
+  font-size: 10px;
+  kerning: 1;
+}
+svg.graph .labels.x-labels {
+  text-anchor: middle;
+}
+svg.graph .labels.y-labels {
+  text-anchor: end;
+}
+#hint{
+  padding: 5px;
+  background: lightyellow;
+  font-size: 12px;
+}
+.line800{
+  stroke: orange;
+  stroke-width: 4px;
+}
+.line1200{
+  stroke: red;
+  stroke-width: 4px;
+}

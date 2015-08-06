@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CO2 - graph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link type="text/css" rel="stylesheet" href="css/normalize.css" media="screen"> -->
+    <link type="text/css" rel="stylesheet" href="css/co2.css" media="screen">
+
+  </head>
+  <body>
+    <svg class="graph" id="graph">
+      <g class="grid x-grid" id="xGrid"></g>
+      <g class="grid y-grid" id="yGrid"></g>
+      <g class="labels x-labels" id="xLabels"></g>
+      <g class="labels y-labels" id="yLabels"></g>
+      <g class="first_set points" data-setname="Our first data set" id="circles"></g>
+      <g class="surfaces" id="surfaces"></g> 
+      <text x="0" y="0" id="hint"></text>     
+    </svg>
+    <p>Текущий уровень CO2: <b id="co2"></b> ppm</p>
+    <p>Min уровень CO2: <span id="co2Min"></span> ppm</p>
+    <p>Max уровень CO2: <span id="co2Max"></span> ppm</p>
+    <p>Текущая температура: <b id="temp"></b> °С</p>
+  </body>
+
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="js/jquery.csv-0.71.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+</html>
